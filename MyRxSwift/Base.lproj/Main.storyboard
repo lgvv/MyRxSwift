@@ -33,6 +33,13 @@
                                     <segue destination="WLc-3e-fi4" kind="show" id="gAg-uj-8SV"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izf-2h-pnA">
+                                <rect key="frame" x="0.0" y="197" width="414" height="30"/>
+                                <state key="normal" title="Subjects"/>
+                                <connections>
+                                    <segue destination="VyN-t9-8EX" kind="show" id="tLa-Dx-7zT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y3G-8A-ea1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -40,8 +47,11 @@
                             <constraint firstItem="cdR-a9-Wvr" firstAttribute="leading" secondItem="Y3G-8A-ea1" secondAttribute="leading" id="3DB-S9-AMb"/>
                             <constraint firstItem="cdR-a9-Wvr" firstAttribute="top" secondItem="Y3G-8A-ea1" secondAttribute="top" id="3zV-eH-ovJ"/>
                             <constraint firstItem="4jm-3n-JcL" firstAttribute="top" secondItem="cdR-a9-Wvr" secondAttribute="bottom" constant="5" id="GKE-IN-r4b"/>
+                            <constraint firstItem="Izf-2h-pnA" firstAttribute="trailing" secondItem="Y3G-8A-ea1" secondAttribute="trailing" id="Goi-nh-OOF"/>
                             <constraint firstItem="Y3G-8A-ea1" firstAttribute="trailing" secondItem="cdR-a9-Wvr" secondAttribute="trailing" id="Hcb-AT-Lzb"/>
                             <constraint firstItem="4jm-3n-JcL" firstAttribute="leading" secondItem="Y3G-8A-ea1" secondAttribute="leading" id="Npk-pP-cDb"/>
+                            <constraint firstItem="Izf-2h-pnA" firstAttribute="leading" secondItem="Y3G-8A-ea1" secondAttribute="leading" id="Y0Q-Fk-tnI"/>
+                            <constraint firstItem="Izf-2h-pnA" firstAttribute="top" secondItem="4jm-3n-JcL" secondAttribute="bottom" constant="8" symbolic="YES" id="bNg-gR-sb1"/>
                             <constraint firstItem="4jm-3n-JcL" firstAttribute="centerX" secondItem="cdR-a9-Wvr" secondAttribute="centerX" id="f0y-Wf-B7I"/>
                             <constraint firstItem="Y3G-8A-ea1" firstAttribute="trailing" secondItem="4jm-3n-JcL" secondAttribute="trailing" id="mA9-si-NpL"/>
                         </constraints>
@@ -84,7 +94,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="csd-qZ-MXB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2565" y="94"/>
+            <point key="canvasLocation" x="2599" y="-87"/>
+        </scene>
+        <!--Subjects-->
+        <scene sceneID="pDG-aJ-JkG">
+            <objects>
+                <viewController id="VyN-t9-8EX" customClass="Subject" customModule="MyRxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rqm-Qt-3oS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0dy-TT-EWw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Subjects" id="7SI-Xy-EmC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xL-FL-ypB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2583" y="589"/>
         </scene>
     </scenes>
     <resources>

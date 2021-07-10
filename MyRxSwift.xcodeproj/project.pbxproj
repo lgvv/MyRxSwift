@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		B10DD28F26985878003ED32E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10DD28E26985878003ED32E /* Assets.xcassets */; };
 		B10DD29226985878003ED32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10DD29026985878003ED32E /* LaunchScreen.storyboard */; };
 		B10DD29A269858ED003ED32E /* Creating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DD299269858ED003ED32E /* Creating.swift */; };
+		B10DD29C2698A5E0003ED32E /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DD29B2698A5E0003ED32E /* Subject.swift */; };
 		B23A7BDDE1B160E05C92F98F /* Pods_MyRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23306755A84743106E38A29C /* Pods_MyRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		B10DD29126985878003ED32E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B10DD29326985878003ED32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B10DD299269858ED003ED32E /* Creating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creating.swift; sourceTree = "<group>"; };
+		B10DD29B2698A5E0003ED32E /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 				08250341C33EEF41D1CCE60A /* Pods-MyRxSwift.debug.xcconfig */,
 				268BF04A6CF107FA3144F97F /* Pods-MyRxSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,6 +92,7 @@
 				B10DD29026985878003ED32E /* LaunchScreen.storyboard */,
 				B10DD29326985878003ED32E /* Info.plist */,
 				B10DD299269858ED003ED32E /* Creating.swift */,
+				B10DD29B2698A5E0003ED32E /* Subject.swift */,
 			);
 			path = MyRxSwift;
 			sourceTree = "<group>";
@@ -210,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B10DD28A26985876003ED32E /* ViewController.swift in Sources */,
+				B10DD29C2698A5E0003ED32E /* Subject.swift in Sources */,
 				B10DD28626985876003ED32E /* AppDelegate.swift in Sources */,
 				B10DD29A269858ED003ED32E /* Creating.swift in Sources */,
 				B10DD28826985876003ED32E /* SceneDelegate.swift in Sources */,
