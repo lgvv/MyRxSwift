@@ -15,6 +15,8 @@
 		B10DD29226985878003ED32E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10DD29026985878003ED32E /* LaunchScreen.storyboard */; };
 		B10DD29A269858ED003ED32E /* Creating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DD299269858ED003ED32E /* Creating.swift */; };
 		B10DD29C2698A5E0003ED32E /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DD29B2698A5E0003ED32E /* Subject.swift */; };
+		B10DD29E26994FCA003ED32E /* Filtering.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DD29D26994FCA003ED32E /* Filtering.swift */; };
+		B10DD2A026999CD5003ED32E /* Transforming.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10DD29F26999CD5003ED32E /* Transforming.swift */; };
 		B23A7BDDE1B160E05C92F98F /* Pods_MyRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23306755A84743106E38A29C /* Pods_MyRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		B10DD29326985878003ED32E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B10DD299269858ED003ED32E /* Creating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creating.swift; sourceTree = "<group>"; };
 		B10DD29B2698A5E0003ED32E /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		B10DD29D26994FCA003ED32E /* Filtering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filtering.swift; sourceTree = "<group>"; };
+		B10DD29F26999CD5003ED32E /* Transforming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transforming.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				B10DD29326985878003ED32E /* Info.plist */,
 				B10DD299269858ED003ED32E /* Creating.swift */,
 				B10DD29B2698A5E0003ED32E /* Subject.swift */,
+				B10DD29D26994FCA003ED32E /* Filtering.swift */,
+				B10DD29F26999CD5003ED32E /* Transforming.swift */,
 			);
 			path = MyRxSwift;
 			sourceTree = "<group>";
@@ -215,6 +221,8 @@
 				B10DD29C2698A5E0003ED32E /* Subject.swift in Sources */,
 				B10DD28626985876003ED32E /* AppDelegate.swift in Sources */,
 				B10DD29A269858ED003ED32E /* Creating.swift in Sources */,
+				B10DD2A026999CD5003ED32E /* Transforming.swift in Sources */,
+				B10DD29E26994FCA003ED32E /* Filtering.swift in Sources */,
 				B10DD28826985876003ED32E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
