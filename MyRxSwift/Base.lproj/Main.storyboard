@@ -54,6 +54,13 @@
                                     <segue destination="eCe-nt-45G" kind="show" id="miv-po-IEi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cg4-r8-Ock">
+                                <rect key="frame" x="0.0" y="335" width="414" height="30"/>
+                                <state key="normal" title="Combining Operators"/>
+                                <connections>
+                                    <segue destination="BRq-eO-71b" kind="show" id="OEz-Oa-jGW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y3G-8A-ea1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,6 +73,7 @@
                             <constraint firstItem="UZu-DR-lHZ" firstAttribute="height" secondItem="Ziw-rT-6hd" secondAttribute="height" id="HGd-tP-a5D"/>
                             <constraint firstItem="UZu-DR-lHZ" firstAttribute="trailing" secondItem="Y3G-8A-ea1" secondAttribute="trailing" id="HNX-iD-fr0"/>
                             <constraint firstItem="Y3G-8A-ea1" firstAttribute="trailing" secondItem="cdR-a9-Wvr" secondAttribute="trailing" id="Hcb-AT-Lzb"/>
+                            <constraint firstItem="Cg4-r8-Ock" firstAttribute="trailing" secondItem="Y3G-8A-ea1" secondAttribute="trailing" id="IBg-CH-MeD"/>
                             <constraint firstItem="UZu-DR-lHZ" firstAttribute="top" secondItem="Ziw-rT-6hd" secondAttribute="bottom" constant="24" id="MfN-0h-Iag"/>
                             <constraint firstItem="Izf-2h-pnA" firstAttribute="height" secondItem="4jm-3n-JcL" secondAttribute="height" id="Mnb-ks-YSy"/>
                             <constraint firstItem="UZu-DR-lHZ" firstAttribute="leading" secondItem="Y3G-8A-ea1" secondAttribute="leading" id="NcR-TS-rKb"/>
@@ -74,8 +82,10 @@
                             <constraint firstItem="Izf-2h-pnA" firstAttribute="leading" secondItem="Y3G-8A-ea1" secondAttribute="leading" id="Y0Q-Fk-tnI"/>
                             <constraint firstItem="Izf-2h-pnA" firstAttribute="top" secondItem="4jm-3n-JcL" secondAttribute="bottom" constant="8" symbolic="YES" id="bNg-gR-sb1"/>
                             <constraint firstItem="4jm-3n-JcL" firstAttribute="centerX" secondItem="cdR-a9-Wvr" secondAttribute="centerX" id="f0y-Wf-B7I"/>
+                            <constraint firstItem="Cg4-r8-Ock" firstAttribute="leading" secondItem="Y3G-8A-ea1" secondAttribute="leading" id="g8M-S3-1dq"/>
                             <constraint firstItem="Y3G-8A-ea1" firstAttribute="trailing" secondItem="4jm-3n-JcL" secondAttribute="trailing" id="mA9-si-NpL"/>
                             <constraint firstItem="Ziw-rT-6hd" firstAttribute="top" secondItem="Izf-2h-pnA" secondAttribute="bottom" constant="8" symbolic="YES" id="poh-No-DUj"/>
+                            <constraint firstItem="Cg4-r8-Ock" firstAttribute="top" secondItem="UZu-DR-lHZ" secondAttribute="bottom" constant="16" id="wms-c6-lwe"/>
                             <constraint firstItem="Y3G-8A-ea1" firstAttribute="trailing" secondItem="Ziw-rT-6hd" secondAttribute="trailing" id="yDg-ym-lqE"/>
                         </constraints>
                     </view>
@@ -222,6 +232,22 @@
             </objects>
             <point key="canvasLocation" x="3967" y="-69"/>
         </scene>
+        <!--Combining-->
+        <scene sceneID="yY8-eu-eVh">
+            <objects>
+                <viewController id="BRq-eO-71b" customClass="Combining" customModule="MyRxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bl4-Ic-wFQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="p8l-YY-bbj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Combining" id="Lqb-Ot-oIJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qvm-My-8BR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2394" y="879"/>
+        </scene>
         <!--Transforming-->
         <scene sceneID="DHD-mz-60r">
             <objects>
@@ -229,14 +255,84 @@
                     <view key="view" contentMode="scaleToFill" id="qSN-tu-IZf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ekp-wR-3e2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="obseveOnTest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lab-zr-i5M">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnz-8M-wCW">
+                                        <rect key="frame" x="0.0" y="20.5" width="414" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dW-wG-qBd">
+                                        <rect key="frame" x="0.0" y="50.5" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9g-0I-Edf">
+                                <rect key="frame" x="253" y="214" width="125" height="30"/>
+                                <state key="normal" title="buffer stop button"/>
+                                <connections>
+                                    <action selector="bufferStopBtn:" destination="eCe-nt-45G" eventType="touchUpInside" id="t90-fK-tEb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9m-gX-YUF">
+                                <rect key="frame" x="14" y="260" width="137" height="30"/>
+                                <state key="normal" title="window start button"/>
+                                <connections>
+                                    <action selector="windowStartBtn:" destination="eCe-nt-45G" eventType="touchUpInside" id="Or3-pp-vxx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qeg-1A-JER">
+                                <rect key="frame" x="248" y="260" width="136" height="30"/>
+                                <state key="normal" title="window stop button"/>
+                                <connections>
+                                    <action selector="windowStopBtn:" destination="eCe-nt-45G" eventType="touchUpInside" id="htN-v9-i7Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssD-be-Fmr">
+                                <rect key="frame" x="19" y="214" width="127" height="30"/>
+                                <state key="normal" title="buffer start button"/>
+                                <connections>
+                                    <action selector="bufferStartBtn:" destination="eCe-nt-45G" eventType="touchUpInside" id="Ltt-mi-VGM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ejZ-AI-uVQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ekp-wR-3e2" firstAttribute="top" secondItem="ejZ-AI-uVQ" secondAttribute="top" id="31a-fK-2BQ"/>
+                            <constraint firstItem="Qeg-1A-JER" firstAttribute="top" secondItem="H9g-0I-Edf" secondAttribute="bottom" constant="16" id="7RW-e5-gfv"/>
+                            <constraint firstItem="I9m-gX-YUF" firstAttribute="leading" secondItem="ejZ-AI-uVQ" secondAttribute="leading" constant="14" id="8hN-N4-9j8"/>
+                            <constraint firstItem="H9g-0I-Edf" firstAttribute="top" secondItem="ekp-wR-3e2" secondAttribute="bottom" constant="55" id="F9O-6q-gu4"/>
+                            <constraint firstItem="ejZ-AI-uVQ" firstAttribute="trailing" secondItem="H9g-0I-Edf" secondAttribute="trailing" constant="36" id="LEW-Ct-ybf"/>
+                            <constraint firstItem="ekp-wR-3e2" firstAttribute="leading" secondItem="ejZ-AI-uVQ" secondAttribute="leading" id="QEA-fw-Q11"/>
+                            <constraint firstItem="H9g-0I-Edf" firstAttribute="leading" secondItem="ssD-be-Fmr" secondAttribute="trailing" constant="107" id="RrC-Gi-6ig"/>
+                            <constraint firstItem="I9m-gX-YUF" firstAttribute="top" secondItem="ssD-be-Fmr" secondAttribute="bottom" constant="16" id="U27-YZ-Leg"/>
+                            <constraint firstItem="ejZ-AI-uVQ" firstAttribute="trailing" secondItem="Qeg-1A-JER" secondAttribute="trailing" constant="30" id="Xm3-3p-JKi"/>
+                            <constraint firstItem="ejZ-AI-uVQ" firstAttribute="trailing" secondItem="ekp-wR-3e2" secondAttribute="trailing" id="akJ-ak-63r"/>
+                            <constraint firstItem="Qeg-1A-JER" firstAttribute="leading" secondItem="I9m-gX-YUF" secondAttribute="trailing" constant="97" id="cPS-RF-nQh"/>
+                            <constraint firstItem="ssD-be-Fmr" firstAttribute="top" secondItem="ekp-wR-3e2" secondAttribute="bottom" constant="55" id="nSW-Vo-jyI"/>
+                            <constraint firstItem="ssD-be-Fmr" firstAttribute="leading" secondItem="ejZ-AI-uVQ" secondAttribute="leading" constant="19" id="uam-DB-0tP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Transforming" id="BIf-Ib-KpD"/>
+                    <connections>
+                        <outlet property="observeOnBtn" destination="nnz-8M-wCW" id="sWI-eh-aMM"/>
+                        <outlet property="observeOnLabel" destination="0dW-wG-qBd" id="E4Y-jz-yg4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWL-nE-KQw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2725" y="551"/>
+            <point key="canvasLocation" x="3967" y="611"/>
         </scene>
         <!--Subjects-->
         <scene sceneID="pDG-aJ-JkG">
