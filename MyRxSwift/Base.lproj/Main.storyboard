@@ -61,6 +61,13 @@
                                     <segue destination="BRq-eO-71b" kind="show" id="OEz-Oa-jGW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JzJ-ew-6MH">
+                                <rect key="frame" x="0.0" y="373" width="414" height="30"/>
+                                <state key="normal" title="Time Based Operators"/>
+                                <connections>
+                                    <segue destination="jbM-d4-rqp" kind="show" id="yXy-Fp-EqW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y3G-8A-ea1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -70,6 +77,7 @@
                             <constraint firstItem="Ziw-rT-6hd" firstAttribute="height" secondItem="Izf-2h-pnA" secondAttribute="height" id="FiX-Z5-puQ"/>
                             <constraint firstItem="4jm-3n-JcL" firstAttribute="top" secondItem="cdR-a9-Wvr" secondAttribute="bottom" constant="5" id="GKE-IN-r4b"/>
                             <constraint firstItem="Izf-2h-pnA" firstAttribute="trailing" secondItem="Y3G-8A-ea1" secondAttribute="trailing" id="Goi-nh-OOF"/>
+                            <constraint firstItem="JzJ-ew-6MH" firstAttribute="top" secondItem="Cg4-r8-Ock" secondAttribute="bottom" constant="8" symbolic="YES" id="Gqj-sz-Sk4"/>
                             <constraint firstItem="UZu-DR-lHZ" firstAttribute="height" secondItem="Ziw-rT-6hd" secondAttribute="height" id="HGd-tP-a5D"/>
                             <constraint firstItem="UZu-DR-lHZ" firstAttribute="trailing" secondItem="Y3G-8A-ea1" secondAttribute="trailing" id="HNX-iD-fr0"/>
                             <constraint firstItem="Y3G-8A-ea1" firstAttribute="trailing" secondItem="cdR-a9-Wvr" secondAttribute="trailing" id="Hcb-AT-Lzb"/>
@@ -83,8 +91,11 @@
                             <constraint firstItem="Izf-2h-pnA" firstAttribute="top" secondItem="4jm-3n-JcL" secondAttribute="bottom" constant="8" symbolic="YES" id="bNg-gR-sb1"/>
                             <constraint firstItem="4jm-3n-JcL" firstAttribute="centerX" secondItem="cdR-a9-Wvr" secondAttribute="centerX" id="f0y-Wf-B7I"/>
                             <constraint firstItem="Cg4-r8-Ock" firstAttribute="leading" secondItem="Y3G-8A-ea1" secondAttribute="leading" id="g8M-S3-1dq"/>
+                            <constraint firstItem="JzJ-ew-6MH" firstAttribute="leading" secondItem="Y3G-8A-ea1" secondAttribute="leading" id="hIB-Zr-gnC"/>
                             <constraint firstItem="Y3G-8A-ea1" firstAttribute="trailing" secondItem="4jm-3n-JcL" secondAttribute="trailing" id="mA9-si-NpL"/>
                             <constraint firstItem="Ziw-rT-6hd" firstAttribute="top" secondItem="Izf-2h-pnA" secondAttribute="bottom" constant="8" symbolic="YES" id="poh-No-DUj"/>
+                            <constraint firstItem="JzJ-ew-6MH" firstAttribute="trailing" secondItem="Y3G-8A-ea1" secondAttribute="trailing" id="s68-0a-Ad5"/>
+                            <constraint firstItem="JzJ-ew-6MH" firstAttribute="height" secondItem="Cg4-r8-Ock" secondAttribute="height" id="sXo-UP-gOD"/>
                             <constraint firstItem="Cg4-r8-Ock" firstAttribute="top" secondItem="UZu-DR-lHZ" secondAttribute="bottom" constant="16" id="wms-c6-lwe"/>
                             <constraint firstItem="Y3G-8A-ea1" firstAttribute="trailing" secondItem="Ziw-rT-6hd" secondAttribute="trailing" id="yDg-ym-lqE"/>
                         </constraints>
@@ -246,7 +257,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qvm-My-8BR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2394" y="879"/>
+            <point key="canvasLocation" x="635" y="896"/>
+        </scene>
+        <!--Time Based Operators-->
+        <scene sceneID="Uh9-Ii-nkN">
+            <objects>
+                <viewController id="jbM-d4-rqp" customClass="TimeBased" customModule="MyRxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fP5-mm-6X4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MOe-uV-vmf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Time Based Operators" id="rRc-zd-3qo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ZW-R8-ZgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1424.6376811594205" y="895.98214285714278"/>
         </scene>
         <!--Transforming-->
         <scene sceneID="DHD-mz-60r">
