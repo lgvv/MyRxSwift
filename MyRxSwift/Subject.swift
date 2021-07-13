@@ -11,7 +11,7 @@ import RxCocoa
 
 class Subject: UIViewController {
     
-    let disposeBag = DisposeBag()
+    var disposeBag = DisposeBag()
     var publishSubject = PublishSubject<String>()
     var behaviorSubject = BehaviorSubject(value: "hehavior -> init")
     var replaySubject = ReplaySubject<String>.create(bufferSize: 2)
@@ -19,6 +19,11 @@ class Subject: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.disposeBag = DisposeBag()
     }
     
     override func viewDidAppear(_ animated: Bool) {
