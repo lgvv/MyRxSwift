@@ -19,7 +19,7 @@ class Filtering: UIViewController {
     @IBOutlet weak var ThrottleLabel: UILabel!
     @IBOutlet weak var ThrottleClickLabel: UILabel!
     
-    let disposeBag = DisposeBag()
+    var disposeBag = DisposeBag()
     var debounceCount = 0
     var debounceClickCount = 0
     
@@ -35,6 +35,11 @@ class Filtering: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.disposeBag = DisposeBag()
     }
     
     override func viewDidAppear(_ animated: Bool) {
