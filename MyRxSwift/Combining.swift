@@ -124,12 +124,21 @@ class Combining: UIViewController {
         
         let zipleft : Observable<Weather> = Observable.of(.sunny,.cloudy,.cloudy,.sunny)
         let zipright = Observable.of("Lisbon","Copenhagen","London","Madrid","Vienna")
+//        let zipleft = PublishSubject<Int>()
+//        let zipright = PublishSubject<String>()
+//
+//        zipleft.onNext(1)
+//        zipleft.onNext(2)
+//        zipright.onNext("3")
+//
+//
         Observable
             .zip(zipleft,zipright) {  weather, city in
                 
                 return "It's \(weather) in \(city)"
             }
-            .subscribe(onNext : { print($0) })
+            .subscribe(onNext : { print($0) },
+                       onCompleted: { print("complete")})
             .disposed(by: disposeBag)
             
         print(" ===== withLatestFrom ===== ")
